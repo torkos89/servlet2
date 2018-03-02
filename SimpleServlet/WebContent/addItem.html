@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <title>AddItem</title>
+  <style>
+   th, td{
+    padding: 5px;
+    text-align: left;
+   }
+   #remove{
+    
+   }
+  </style>
+ </head>
+ <body>
+  <h1>Add Item</h1>
+  <form id="things" action="addItemServlet" method="post" >
+   Store: <input type="text" name="store">
+   Item: <input type="text" name="item"><br>
+   <input type="submit" name="Add Item">
+  </form>
+  <a href ="index.html">Home</a><br />
+  <a href ="viewAllItemsServlet">View complete list</a><br />
+  <a href ="editItem.html"></a>
+  <i class="fa-pencil-alt fa-fw"></i>
+  <table>
+  <thead>
+   <tr>
+    <th>Store</th>
+    <th>Item</th>
+    <th onclick="document.getElementById('remove').style.display='block', document.getElementById('edit').style.display='block'"><i class="fa fa-eye"></i></th>
+   </tr>
+   </thead>
+   <tbody id="into"> <!-- insert point -->
+   </tbody>
+  </table>
+  <script src="main.js"> 
+  </script>
+ </body>
+</html>

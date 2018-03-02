@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>SimpleServlet</title>
+   <style type="text/css"> 
+   body{
+    background-color:lightgrey;
+   }
+   h1{
+    text-align:center;
+   }
+   form{
+    text-align:center;
+    top:0;
+    botom:0;
+    left:0;
+    right:0;
+   }
+   </style>
+ </head>
+ <body>
+ <!-- <canvas id = "main" width = "500" height = "500"></canvas> -->
+  <h1>~ Hello ~</h1>
+   <form action="helloServlet" method="post">
+   First name:<br> <input type="text" name="first" size="20"><br>
+   Last name:<br> <input type="text" name="last" size="20">
+   <br><br>
+    <input type="submit" value="Submit"/>
+  </form>
+  <div>
+   <a href="addItem.html">Add a new item to the list</a><br />
+  </div>
+  <div>
+   <a href="viewAllItemsServlet">View the compleate list</a><br />
+  </div>
+  <script src="main.js"></script>
+ </body>
+</html>
